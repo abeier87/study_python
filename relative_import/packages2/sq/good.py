@@ -1,0 +1,2 @@
+def saygood():
+    print('good')
