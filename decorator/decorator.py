@@ -1,13 +1,29 @@
-# import logging
+import time
 
-# def use_logging(func):
-#     def wrapper(*args, **kwargs):
-#         logging.warning("%s is running" % func.__name__)
-#         return func(*args, **kwargs)
-#     return wrapper
 
-# def bar():
-#     print('i am bar')
+def timer(time_type):
+    print(time_type)
 
-# bar = use_logging(bar)
-# bar()
+    def outer(func):
+        print("func的名字是：", func.__name__)
+
+        def inner(*args, **kwargs):
+            start = time.time()
+            func(*args, **kwargs)
+            end = time.time()
+            res = end - start
+            print('时间结果是：', res)
+
+        return inner
+
+    return outer
+
+
+@timer('min')
+def foo(a, b, c):
+    print('in foo', a, b, c)
+
+
+
+# foo('woniu', 'gfifigf', '79846543635')
+foo('woniu', 'gfifigf')
