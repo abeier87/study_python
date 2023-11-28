@@ -3,3 +3,6 @@ def sayhello1():
     
 def sayhello2():
     print("Hello2!")
+
+print('hello')
+print(__name__)

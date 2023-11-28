@@ -2,6 +2,6 @@
 
 # sayhi()
 
-from packages2.sq2 import hi
+from package_2.sq2 import hi
 
 hi.sayhi()
