@@ -1,5 +1,5 @@
-__all__ = ['sayhi', 'sayhello1']
+print('package_1 is imported')
 
 
-# from packages.hi import sayhi
-# from packages.hello import *
+class B:
+    pass

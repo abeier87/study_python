@@ -1,7 +1,5 @@
+print('hi is imported')
+
+
 def sayhi():
     print("Hi!")
-
-
-import hello
-
-print(__name__)
