@@ -9,6 +9,9 @@ class grandpa:
 class f_1(grandpa):
     def __init__(self):
         print("f1")
+        
+    def say_hello(self):
+        print("hello from f1")
 
 class f_2(grandpa):
     def __init__(self):
